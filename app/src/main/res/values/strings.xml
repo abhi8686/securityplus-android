@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SecurityApplication</string>
+    <string name="title_section1">Conversations</string>
+    <string name="title_section2">Contacts</string>
+
+</resources>

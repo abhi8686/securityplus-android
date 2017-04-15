@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.android.securityapplication.RegistrationActivity">
+    <TextView
+        android:text="Enter your personal contact details below to create your new account."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/user_txt"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:hint="Fullname"
+        android:drawableLeft="@mipmap/ic_user_blue"
+        android:drawableStart="@mipmap/ic_user_blue" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/email_txt"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:hint="username@example.com"
+        android:drawableLeft="@mipmap/ic_email_blue"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/psd_txt"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:hint="Min 6 Characters"
+        android:drawableLeft="@mipmap/ic_password_blue"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Register"
+        android:onClick="register"/>
+</LinearLayout>

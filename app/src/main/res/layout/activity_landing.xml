@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_landing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context="widgetlibrary.companymapp.com.companymapp_agent_application.LandingActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/landing_image"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/logo"-->
+        <!--android:src="@drawable/landing_graphic"-->
+        <!--/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SecurityPlus"
+        android:id="@+id/discover"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_below="@+id/discover"
+        android:textSize="17sp"
+        android:layout_marginBottom="20sp"
+        android:text="Application to securely send and receive messages using RSA"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="signin"
+            android:text="signin"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="join now"
+        android:onClick="join"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="500dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/logo"-->
+        <!--android:src="@drawable/logo_new"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+</RelativeLayout>
